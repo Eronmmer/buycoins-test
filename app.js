@@ -1,4 +1,4 @@
-const myGitHubToken = "15a25fb76636f60f724f74558699312c7c10a794";
+const myGitHubToken = "a02c60eae894af54db02549c059d72d1721bd54f";
 const mainBody = document.querySelector(".gh");
 
 const fetchedRepositories = (repo) => {
@@ -77,7 +77,7 @@ const loadRepositories = async () => {
 			method: "post",
 			headers: {
 				"Content-Type": "application/graphql",
-				Authorization: `Bearer ${myGitHubToken}`,
+				Authorization: `bearer ${myGitHubToken}`,
 			},
 			body: JSON.stringify({ query }),
 		});
